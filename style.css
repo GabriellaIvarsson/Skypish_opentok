@@ -1,0 +1,46 @@
+.wrapper{
+	padding: 10px !important;
+	width: 800px;
+	height: 500px;
+	margin: 20px;
+	margin-left: auto ;
+  	margin-right: auto ;
+  	border: 2px solid #757575;
+}
+
+#myPublisher{
+  	float: top;
+}
+
+#mySubscriber{
+  	float: bottom;
+}
+
+#participants{
+	height: 100% !important;
+}
+
+#facebookSuccess{
+	margin-top: 100px;
+	width: 200px !important;
+	height: 150px !important;
+	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+.margin10{
+	margin: 10px;
+}
+
+.left{
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+
+.right{
+	display: inline-block;
+	float: right;
+	width: 70%;
+	height: 100%;
+}
