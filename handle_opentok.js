@@ -2,7 +2,6 @@ session.addEventListener("sessionConnected", sessionConnectedHandler);
 session.addEventListener("streamCreated", streamCreatedHandler);
 session.connect(apiKey, token);
 
-
 //Recieve facebook information from other clients
 session.addEventListener("signal", signalHandler);
 function signalHandler(event) {
@@ -23,14 +22,17 @@ function sessionConnectedHandler (event) {
 }
 
 function subscribeToStreams(streams) {
-	console.log("SUBSCRIBE");
-	console.log(streams);
 	for (var i = 0; i < streams.length; i++) {
 		var stream = streams[i];
 		if (stream.connection.connectionId != session.connection.connectionId) {
 			session.subscribe(stream, "mySubscriber", {width:500, height:300, name: localStorage.getItem(stream.connection.connectionId)});
+			
+			//Make sure that the subscriber video window is placed in the right div. 
+			$("#mySubscriber").appendTo(".wrapper .right");
 		}
 	}
+
+	
 
 	//Send your facebook information to other clients
 	session.signal({
