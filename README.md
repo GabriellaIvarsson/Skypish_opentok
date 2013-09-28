@@ -11,5 +11,5 @@ Sub-modules and libraries
 - OpenTok http://tokbox.com/opentok/
 - Pusher http://pusher.com/
 - jQuery http://jquery.com/
-- Twitter Bootstrap twitter.github.com/bootstrap/
+- Twitter Bootstrap http://twitter.github.com/bootstrap/
 
